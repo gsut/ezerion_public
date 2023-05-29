@@ -1,0 +1,70 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+</head>
+
+<body>	
+<div style="background-image: url('background.png');background-repeat: no-repeat;background-attachment: fixed;background-size: 100% 100%;background-blend-mode: lighten;background-color: rgba(255,255,255,0.5);">
+	<div style="margin:20;text-align: left;">
+		<div>
+			<img src="ezerion.png" alt="Ezerion" style="width:100%;">
+		</div>
+		<div id="main">
+			<div class="main-area"><!-- END main #content -->
+				<p><h2>Ezerion Nedir?</h2></p>
+				<p>Ezerion, oyun alanında dağılarak, rakip oyuncunun alanlarını ele geçirme hedefli bir strateji oyunudur. Oyun içerisindeki seviyelerde bulunan bomba, ışınlanma, mayın ve duvarlar; oyunculara avantaj ve dezavantaj sağlayarak oyundaki heyecanı yükseltir. Her seviyede oyun alanı, rakip sayısı ve zorluk seviyesi değişerek oyuncuya vazgeçilmez bir strateji ve oyun deneyimi sunar. </p>
+				<p>Oyunda birinci seviye ile başlanarak her seviyede zafer kazanıldıktan sonra bir üst seviyeye geçilir. Her seviye kazanıldığında oyuncunun puanına göre başarı yıldızı kazanılır. Bu yıldızların sayısı ileride diğer evrenlere sıçramak için kritik bir kaynak olacaktır.</p>
+				<p>Oyun şimdilik iki dil (İngilizce ve Türkçe) desteği ile gelmektedir. İleride çıkaracağımız güncellemelerde bunu olabildiğince arttırmaya çalışacağız. </p>
+
+				<p><h2>Nasıl Oynanır?</h2></p>
+				<p>Oyunda farklı evrenler ve seviyeler vardır. Yeni başlayan bir oyuncu, su evreninden birinci seviye ile başlar. Her seviyeye girildiğinde seviye için hazırlanmış oyun alanında başlar. Her seviye için oyun alanları ve bu alanda oynayacak oyuncu sayısı bellidir. Her oyuncu kendi renginde olan karelere tıklayarak oynar. </p>
+				<p>Bir karenin üzerindeki zar değerleri; karenin kaç tıklama aldığını gösterir. Bu değerler, karenin komşuluğundaki kareler kadar (Alt, üst, sağ ve sol kareler) yükselebilir. Karenin değeri alabileceği en üst değeri aldıktan sonra bir defa daha tıklandığında patlayarak etrafındaki karelerin her birine 1 değerini ve oyuncunun rengini ekleyerek dağılır. Böylece alanda çoğalarak ilerler. Oyun alanında rakiplerin renginde kare kalmadığı zaman oyun kazanılmış olur. Kendi renginizde kare kalmadığında ise kaybetmiş olursunuz.</p>
+				 
+				<p><h2>Oyundaki Nesneler</h2></p>
+				<p><h3>Bombalar</h3></p>
+				<p>İki adet bomba türü vardır. Oyun içerisinde değişik yerlerde bu çeşitli bombalar mevcuttur. Bombalar, o karenin üzerine dağıldığınızda patlar. Türüne göre:</p>
+				<p><b>Dinamitler:</b></br>
+				<img src="water/bomb1.png" alt="Ezerion" style="width:10%;">
+				<img src="water/bomb2.png" alt="Ezerion" style="width:10%;">
+				<img src="water/bomb3.png" alt="Ezerion" style="width:10%;"></br>
+				 Dinamitin büyüklüğü, patlama gücünü gösterir. Soldaki resimden başlayarak sırayla; birinci etrafındaki bir sıra karelere dağılarak bölgeyi alır. ikinci etrafındaki 2 sıra karelere dağılarak bölgeyi alır. Üçüncü ise etrafındaki 3 sıra karelere dağılarak bu bölgeyi alır.</p>
+				<p><b>Yönlü Bombalar:</b></br>
+				<img src="water/bomby1.png" alt="Ezerion" style="width:10%;">
+				<img src="water/bomby2.png" alt="Ezerion" style="width:10%;">
+				<img src="water/bomby3.png" alt="Ezerion" style="width:10%;">
+				<img src="water/bomby4.png" alt="Ezerion" style="width:10%;">
+				<img src="water/bomby5.png" alt="Ezerion" style="width:10%;">
+				<img src="water/bomby6.png" alt="Ezerion" style="width:10%;"></br>
+				Yön bombaları yanlarında bulunan yön işaretleri ile patladığında hangi yöne doğru çapraz olan karelere patlayacağını gösterir. Bu bombalar patlatıldığında üzerinde gösterilen yönde bulunan kareleri bu bombayı patlatan kişinin zarına dönüştürür. Bu patlama boşluklardan geçer ama duvardan geçemez.</p>
+				<p><h3>Işınlanma</h3></p>
+				<img src="water/teleport_1.png" alt="Ezerion" style="width:10%;">
+				<img src="water/teleport_2.png" alt="Ezerion" style="width:10%;">
+				<img src="water/teleport_3.png" alt="Ezerion" style="width:10%;">
+				<img src="water/teleport_4.png" alt="Ezerion" style="width:10%;">
+				<img src="water/teleport_5.png" alt="Ezerion" style="width:10%;">
+				<img src="water/teleport_6.png" alt="Ezerion" style="width:10%;">
+				<p>Haritaların bazı noktalarında ışınlanma noktaları bulunmaktadır. Bunlar renk kodlu olarak ikili eş halinde haritada bulunur. Bu ışınlanma noktalarına geldiğinizde zarınız haritadaki temas ettiğiniz renkte olan ışın noktasının eşine gidebilmekte ve değişik stratejiler kullanmanıza olanak sağlamaktadır.</p>
+				<p><h3>Duvar</h3></p>
+				<img src="water/wall_1.png" alt="Ezerion" style="width:10%;">
+				<img src="water/wall_2.png" alt="Ezerion" style="width:10%;">
+				<img src="water/wall_3.png" alt="Ezerion" style="width:10%;">
+				<p>Duvarlar haritaların bazı yerlerinde bulunmaktadır ve bu duvarları geçebilmeniz için zarınızı belli bir miktarda bu duvarların yanında patlatarak duvarları yıkmanız gerekmektedir. Duvarı bütünüyle kırmak için 3 hamle yapmanız gerekmektedir. Her bir darbede duvar çatlayacak; en sonunda kırılacaktır. Rakibinizin size karşı olduğunu unutmayın! Siz duvarla ilgilenirken rakibiniz size karşı büyük üstünlük elde edebilir.</p>
+				<p><h3>Mayınlar</h3></p>
+				<img src="water/mine.png" alt="Ezerion" style="width:10%;">
+				<p>Mayınlar, bombaların aksine size ve rakibinize avantaj sağlamak için değil, oyundaki heyecanınızı ve adrenalin seviyenizi yüksek tutmak için tasarlanmıştır. Harita içindeki mayın bombalarını patlattığınız takdirde bu bombalar alan kazandırmaz, kazandığınız alanları kaybetmenize yol açar. Mayın bombaları patlatıldığında etrafındaki bir sıra kareyi sahipsiz kareye çevirir.</p>
+
+			</div>
+		</div>
+		<div style="text-align:center;">
+			<a href="https://www.instagram.com/qulvargamestudio"><img src="instagram.png" alt="Ezerion" style="width:20%;"></a>
+			<a href="https://www.twitter.com/qulvargames"><img src="twitter.png" alt="Ezerion" style="width:20%;"></a>
+			<a href="https://www.linkedin.com/company/qulvar-game-studio"><img src="facebook.png" alt="Ezerion" style="width:20%;"></a>
+			<a href="https://www.linkedin.com/company/qulvar-game-studio"><img src="linkedin.png" alt="Ezerion" style="width:20%;"></a>
+		</div>
+		</br></br>
+		<div>
+			<img src="qulvar_logo.png" alt="Ezerion" style="width:100%;">
+		</div>
+	</div>
+</div>
+</body>

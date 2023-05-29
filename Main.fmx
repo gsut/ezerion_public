@@ -1,0 +1,1677 @@
+object EzerionForm: TEzerionForm
+  Left = 0
+  Top = 0
+  Caption = 'EzerionForm'
+  ClientHeight = 624
+  ClientWidth = 384
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [Desktop]
+  FullScreen = True
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnKeyUp = FormKeyUp
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  object GameTabControl: TTabControl
+    Align = Client
+    FullSize = True
+    Size.Width = 384.000000000000000000
+    Size.Height = 534.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 6
+    TabOrder = 0
+    TabPosition = None
+    OnChange = GameTabControlChange
+    Sizes = (
+      384s
+      534s
+      384s
+      534s
+      384s
+      534s
+      384s
+      534s
+      384s
+      534s
+      384s
+      534s
+      384s
+      534s
+      384s
+      534s
+      384s
+      534s
+      384s
+      534s
+      384s
+      534s
+      384s
+      534s)
+    object OnTabChangeAnimation: TFloatAnimation
+      Duration = 1.200000047683716000
+      OnFinish = OnTabChangeAnimationFinish
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+    object StartTabItem: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemtoprated'
+      TabOrder = 0
+      Text = 'StartTabItem'
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object StartBackgroundImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = Client
+        Size.Width = 384.000000000000000000
+        Size.Height = 534.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+      end
+      object s1Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.X = 64.000000000000000000
+        Position.Y = 224.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 250.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = s1ImageClick
+        object s1HeightFloatAnimation: TFloatAnimation
+          AutoReverse = True
+          Duration = 1.000000000000000000
+          Loop = True
+          PropertyName = 'Size.Height'
+          StartValue = 0.000000000000000000
+          StopValue = 0.000000000000000000
+        end
+        object s1WidthFloatAnimation: TFloatAnimation
+          AutoReverse = True
+          Duration = 1.000000000000000000
+          Loop = True
+          PropertyName = 'Size.Width'
+          StartValue = 0.000000000000000000
+          StopValue = 0.000000000000000000
+        end
+        object s1XFloatAnimation: TFloatAnimation
+          AutoReverse = True
+          Duration = 1.000000000000000000
+          Loop = True
+          PropertyName = 'Position.X'
+          StartValue = 0.000000000000000000
+          StopValue = 0.000000000000000000
+        end
+        object s1YFloatAnimation: TFloatAnimation
+          AutoReverse = True
+          Duration = 1.000000000000000000
+          Loop = True
+          PropertyName = 'Position.Y'
+          StartValue = 0.000000000000000000
+          StopValue = 0.000000000000000000
+        end
+      end
+      object sUserInfoImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.X = 128.000000000000000000
+        Position.Y = 75.000000000000000000
+        Size.Width = 249.000000000000000000
+        Size.Height = 110.000000000000000000
+        Size.PlatformDefault = False
+        object UsernameText: TText
+          Position.X = 16.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 161.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Leading
+        end
+        object sXImage: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Hint = 'Settings'
+          Position.X = 58.000000000000000000
+          Position.Y = 80.000000000000000000
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object sHImage: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Hint = 'Settings'
+          Position.X = 18.000000000000000000
+          Position.Y = 80.000000000000000000
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object sS1Image: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Hint = 'Settings'
+          Position.X = 170.000000000000000000
+          Position.Y = 80.000000000000000000
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object sS2Image: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Hint = 'Settings'
+          Position.X = 210.000000000000000000
+          Position.Y = 80.000000000000000000
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object sLImage: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Hint = 'Settings'
+          Position.X = 98.000000000000000000
+          Position.Y = 80.000000000000000000
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object sS3Image: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Hint = 'Settings'
+          Position.X = 138.000000000000000000
+          Position.Y = 80.000000000000000000
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          ParentShowHint = False
+          ShowHint = True
+        end
+      end
+      object sm1Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.X = 8.000000000000000000
+        Position.Y = 496.000000000000000000
+        OnClick = sm1ImageClick
+      end
+      object sm2Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.X = 80.000000000000000000
+        Position.Y = 496.000000000000000000
+        OnClick = sm2ImageClick
+      end
+      object sm3Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.X = 168.000000000000000000
+        Position.Y = 496.000000000000000000
+        OnClick = sm3ImageClick
+      end
+      object sm4Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.X = 280.000000000000000000
+        Position.Y = 507.000000000000000000
+        OnClick = sm4ImageClick
+      end
+      object SSettingImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 354.000000000000000000
+        Position.Y = 7.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = SettingImageClick
+      end
+      object InfoImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 314.000000000000000000
+        Position.Y = 7.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = InfoImageClick
+      end
+      object MapListImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 274.000000000000000000
+        Position.Y = 7.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = MapListImageClick
+      end
+      object HelpImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 234.000000000000000000
+        Position.Y = 7.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = HelpImageClick
+      end
+      object sUserFlagImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.X = 8.000000000000000000
+        Position.Y = 72.000000000000000000
+        Size.Width = 113.000000000000000000
+        Size.Height = 113.000000000000000000
+        Size.PlatformDefault = False
+        object sUFlagImage: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Position.X = 16.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 74.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+    object LevelTabItem: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'LevelTabItem'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object LevelBackgroundImage: TImage
+        Touch.GestureManager = GestureManager2
+        MultiResBitmap = <
+          item
+          end>
+        Align = Client
+        Size.Width = 384.000000000000000000
+        Size.Height = 534.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+      end
+      object UpArrowImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.X = 330.000000000000000000
+        Position.Y = 106.000000000000000000
+        Size.Width = 38.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = UpArrowImageClick
+      end
+      object DownArrowImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.X = 10.000000000000000000
+        Position.Y = 546.000000000000000000
+        Size.Width = 38.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = DownArrowImageClick
+      end
+      object LExitImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 354.000000000000000000
+        Position.Y = 7.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ExitImageClick
+      end
+      object AvatarImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Size.Width = 30.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        object AvatarXFloatAnimation: TFloatAnimation
+          Duration = 2.500000000000000000
+          OnFinish = AvatarXFloatAnimationFinish
+          PropertyName = 'Position.X'
+          StartValue = 0.000000000000000000
+          StopValue = 0.000000000000000000
+        end
+        object AvatarYFloatAnimation: TFloatAnimation
+          Duration = 2.500000000000000000
+          PropertyName = 'Position.Y'
+          StartValue = 0.000000000000000000
+          StopValue = 0.000000000000000000
+        end
+      end
+    end
+    object GameTabItem: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemcontacts'
+      TabOrder = 0
+      Text = 'GameTabItem'
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object GameBackgroundImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = Client
+        Size.Width = 384.000000000000000000
+        Size.Height = 534.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+      end
+      object GExitImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 346.000000000000000000
+        Position.Y = 71.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ExitImageClick
+      end
+      object GSettingImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 277.000000000000000000
+        Position.Y = 71.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = SettingImageClick
+      end
+      object Heart1Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 10.000000000000000000
+        Position.Y = 71.000000000000000000
+        Size.Width = 15.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Heart2Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 26.000000000000000000
+        Position.Y = 71.000000000000000000
+        Size.Width = 15.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object Heart3Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 42.000000000000000000
+        Position.Y = 71.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object p1Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Size.Width = 137.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+        object p1Text: TText
+          Align = Client
+          Margins.Left = 5.000000000000000000
+          Size.Width = 132.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'player 1'
+          TextSettings.Font.Family = 'Krona One'
+          TextSettings.HorzAlign = Leading
+        end
+        object fl1Image: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Position.X = 104.000000000000000000
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object p2Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.X = 136.000000000000000000
+        Size.Width = 137.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+        object p2Text: TText
+          Align = Client
+          Margins.Left = 5.000000000000000000
+          Size.Width = 132.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'player 2'
+          TextSettings.Font.Family = 'Krona One'
+          TextSettings.HorzAlign = Leading
+        end
+        object fl2Image: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Position.X = 107.000000000000000000
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object p3Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.X = 272.000000000000000000
+        Size.Width = 113.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+        object p3Text: TText
+          Align = Client
+          Margins.Left = 5.000000000000000000
+          Size.Width = 108.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'player 3'
+          TextSettings.Font.Family = 'Krona One'
+          TextSettings.HorzAlign = Leading
+        end
+        object fl3Image: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Position.X = 83.000000000000000000
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object p4Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.Y = 32.000000000000000000
+        Size.Width = 137.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+        object p4Text: TText
+          Align = Client
+          Margins.Left = 5.000000000000000000
+          Size.Width = 132.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'player 4'
+          TextSettings.Font.Family = 'Krona One'
+          TextSettings.HorzAlign = Leading
+        end
+        object fl4Image: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Position.X = 104.000000000000000000
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object p5Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.X = 136.000000000000000000
+        Position.Y = 32.000000000000000000
+        Size.Width = 137.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+        object p5Text: TText
+          Align = Client
+          Margins.Left = 5.000000000000000000
+          Size.Width = 132.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'player 5'
+          TextSettings.Font.Family = 'Krona One'
+          TextSettings.HorzAlign = Leading
+        end
+        object fl5Image: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Position.X = 107.000000000000000000
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object p6Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.X = 272.000000000000000000
+        Position.Y = 32.000000000000000000
+        Size.Width = 113.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+        object p6Text: TText
+          Align = Client
+          Margins.Left = 5.000000000000000000
+          Size.Width = 108.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'player 6'
+          TextSettings.Font.Family = 'Krona One'
+          TextSettings.HorzAlign = Leading
+        end
+        object fl6Image: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Position.X = 83.000000000000000000
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object L1Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 249.000000000000000000
+        Position.Y = 71.000000000000000000
+        Size.Width = 15.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ExitImageClick
+      end
+      object L2Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 234.000000000000000000
+        Position.Y = 71.000000000000000000
+        Size.Width = 15.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ExitImageClick
+      end
+      object HandImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 10.000000000000000000
+        Position.Y = 331.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        object ZeroXFloatAnimation: TFloatAnimation
+          AutoReverse = True
+          Duration = 1.500000000000000000
+          Loop = True
+          PropertyName = 'Position.X'
+          StartValue = 0.000000000000000000
+          StartFromCurrent = True
+          StopValue = 0.000000000000000000
+        end
+        object ZeroYFloatAnimation: TFloatAnimation
+          AutoReverse = True
+          Duration = 1.500000000000000000
+          Loop = True
+          PropertyName = 'Position.Y'
+          StartValue = 0.000000000000000000
+          StartFromCurrent = True
+          StopValue = 0.000000000000000000
+        end
+      end
+      object MessageImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 218.000000000000000000
+        Position.Y = 219.000000000000000000
+        Size.Width = 150.000000000000000000
+        Size.Height = 150.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        object MessageText: TText
+          Align = Client
+          Margins.Left = 15.000000000000000000
+          Margins.Top = 15.000000000000000000
+          Margins.Right = 15.000000000000000000
+          Margins.Bottom = 15.000000000000000000
+          Size.Width = 120.000000000000000000
+          Size.Height = 120.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00040000000200000004000000}
+          TextSettings.FontColor = claWhite
+          TextSettings.Trimming = Word
+          TextSettings.HorzAlign = Leading
+        end
+      end
+      object score1Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 83.000000000000000000
+        Position.Y = 70.000000000000000000
+        Size.Width = 12.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object score2Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 96.000000000000000000
+        Position.Y = 70.000000000000000000
+        Size.Width = 12.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object score3Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 109.000000000000000000
+        Position.Y = 70.000000000000000000
+        Size.Width = 12.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object score4Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 122.000000000000000000
+        Position.Y = 70.000000000000000000
+        Size.Width = 12.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object score5Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 135.000000000000000000
+        Position.Y = 70.000000000000000000
+        Size.Width = 12.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object score6Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 148.000000000000000000
+        Position.Y = 70.000000000000000000
+        Size.Width = 12.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object score7Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 161.000000000000000000
+        Position.Y = 70.000000000000000000
+        Size.Width = 12.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object score8Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 174.000000000000000000
+        Position.Y = 70.000000000000000000
+        Size.Width = 12.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object score9Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 187.000000000000000000
+        Position.Y = 70.000000000000000000
+        Size.Width = 12.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object L3Image: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 218.000000000000000000
+        Position.Y = 71.000000000000000000
+        Size.Width = 15.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ExitImageClick
+      end
+      object PauseImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Hint = 'Settings'
+        Position.X = 311.000000000000000000
+        Position.Y = 71.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = PauseImageClick
+      end
+    end
+    object SettingsTabItem: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemrecent'
+      TabOrder = 0
+      Text = 'SettingsTabItem'
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object SettingBackGroundImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = Client
+        Size.Width = 384.000000000000000000
+        Size.Height = 534.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+      end
+      object SettingMusicImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.Y = 197.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = SettingMusicImageClick
+      end
+      object SettingLangImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.Y = 103.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = SettingLangImageClick
+      end
+      object SettingBackImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.Y = 451.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = SettingBackImageClick
+      end
+      object SettingUserImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.Y = 277.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = SettingUserImageClick
+      end
+      object SettingVibrationImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.Y = 357.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = SettingVibrationImageClick
+      end
+    end
+    object LanguageTabItem: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemmostrecent'
+      TabOrder = 0
+      Text = 'LanguageTabItem'
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object LangBackgroundImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = Client
+        Size.Width = 384.000000000000000000
+        Size.Height = 534.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+      end
+      object LangImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.Y = 83.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 65.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object LangEnImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.Y = 187.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 65.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = LangEnImageClick
+      end
+      object LangTrImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.Y = 269.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 65.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = LangTrImageClick
+      end
+      object LangBackImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.Y = 357.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 65.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = LangBackImageClick
+      end
+    end
+    object SoundTabItem: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'SoundTabItem'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object SoundBackgroundImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = Client
+        Size.Width = 384.000000000000000000
+        Size.Height = 534.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+      end
+      object SoundSoundImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.Y = 119.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+      end
+      object SoundSoundVolumeImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.Y = 197.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+      end
+      object SoundMusicVolumeImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.Y = 396.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+      end
+      object SoundBackImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.Y = 468.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+        OnClick = SoundBackImageClick
+      end
+      object SoundMusicImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.Y = 305.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+      end
+      object SoundTrackBar: TAlphaTrackBar
+        CanParentFocus = True
+        Max = 10.000000000000000000
+        Orientation = Horizontal
+        Position.X = 32.000000000000000000
+        Position.Y = 208.000000000000000000
+        Size.Width = 321.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        OnChange = SoundTrackBarChange
+      end
+      object MusicTrackBar: TAlphaTrackBar
+        CanParentFocus = True
+        Max = 10.000000000000000000
+        Orientation = Horizontal
+        Position.X = 16.000000000000000000
+        Position.Y = 408.000000000000000000
+        Size.Width = 321.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        OnChange = MusicTrackBarChange
+      end
+      object SoundTitleImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.Y = 47.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+      end
+    end
+    object WebTabItem: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'WebTabItem'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object GameWebBrowser: TWebBrowser
+        Align = Client
+        Size.Width = 384.000000000000000000
+        Size.Height = 485.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object BackRectangle: TRectangle
+        Align = Bottom
+        Position.Y = 485.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        object WebBackImage: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Position.X = 10.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 217.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          OnClick = WebBackImageClick
+        end
+      end
+    end
+    object WinLoseTabItem: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'WinLoseTabItem'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object WinLoseImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = Client
+        Size.Width = 384.000000000000000000
+        Size.Height = 534.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+        OnClick = WinLoseImageClick
+      end
+    end
+    object UserNameTabItem: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'UserNameTabItem'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object UserNameBackgroundImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = Client
+        Size.Width = 384.000000000000000000
+        Size.Height = 534.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+      end
+      object UserNameMenuImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.X = 16.000000000000000000
+        Position.Y = 32.000000000000000000
+        Size.Width = 345.000000000000000000
+        Size.Height = 417.000000000000000000
+        Size.PlatformDefault = False
+        object UserNameOkImage: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Position.X = 104.000000000000000000
+          Position.Y = 344.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          WrapMode = Stretch
+          OnClick = UserNameOkImageClick
+        end
+        object UserNameEdit: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 1
+          MaxLength = 15
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Position.X = 64.000000000000000000
+          Position.Y = 42.000000000000000000
+          Size.Width = 209.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Size, FontColor]
+        end
+        object CountryComboBox: TComboBox
+          Position.X = 40.000000000000000000
+          Position.Y = 296.000000000000000000
+          Size.Width = 233.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+        end
+        object BirthYearComboBox: TComboBox
+          Items.Strings = (
+            '1950'
+            '1951'
+            '1952'
+            '1953'
+            '1954'
+            '1955'
+            '1956'
+            '1957'
+            '1958'
+            '1959'
+            '1960'
+            '1961'
+            '1962'
+            '1963'
+            '1964'
+            '1965'
+            '1966'
+            '1967'
+            '1968'
+            '1969'
+            '1970'
+            '1971'
+            '1972'
+            '1973'
+            '1974'
+            '1975'
+            '1976'
+            '1977'
+            '1978'
+            '1979'
+            '1980'
+            '1981'
+            '1982'
+            '1983'
+            '1984'
+            '1985'
+            '1986'
+            '1987'
+            '1988'
+            '1989'
+            '1990'
+            '1991'
+            '1992'
+            '1993'
+            '1994'
+            '1995'
+            '1996'
+            '1997'
+            '1998'
+            '1999'
+            '2000'
+            '2001'
+            '2002'
+            '2003'
+            '2004'
+            '2005'
+            '2006'
+            '2007'
+            '2008'
+            '2009'
+            '2010'
+            '2011'
+            '2012'
+            '2013'
+            '2014'
+            '2015'
+            '2016'
+            '2017'
+            '2018'
+            '2019'
+            '2020')
+          Position.X = 56.000000000000000000
+          Position.Y = 144.000000000000000000
+          Size.Width = 233.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+        end
+        object GenderComboBox: TComboBox
+          Position.X = 64.000000000000000000
+          Position.Y = 224.000000000000000000
+          Size.Width = 233.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+        end
+      end
+    end
+    object ADSTabItem: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'ADSTabItem'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object ADSBackgroundImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = Client
+        Size.Width = 384.000000000000000000
+        Size.Height = 534.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+      end
+      object ADSMessageImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.X = 24.000000000000000000
+        Position.Y = 176.000000000000000000
+        Size.Width = 345.000000000000000000
+        Size.Height = 281.000000000000000000
+        Size.PlatformDefault = False
+        object AdsViewImage: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Position.X = 24.000000000000000000
+          Position.Y = 200.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          WrapMode = Stretch
+          OnClick = AdsViewImageClick
+        end
+        object ADSMenuImage: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Position.X = 200.000000000000000000
+          Position.Y = 207.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          WrapMode = Stretch
+          OnClick = ADSMenuImageClick
+        end
+      end
+    end
+    object SavedLevelTabItem: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'SavedLevelTabItem'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object SavedLevelBackgroundImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = Client
+        Size.Width = 384.000000000000000000
+        Size.Height = 534.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+        object SavedLevelMenuImage: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Position.X = 32.000000000000000000
+          Position.Y = 80.000000000000000000
+          Size.Width = 345.000000000000000000
+          Size.Height = 385.000000000000000000
+          Size.PlatformDefault = False
+          object SavedLevelYesImage: TImage
+            MultiResBitmap = <
+              item
+              end>
+            Position.X = 40.000000000000000000
+            Position.Y = 296.000000000000000000
+            Size.Width = 121.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            WrapMode = Stretch
+            OnClick = SavedLevelYesImageClick
+          end
+          object SavedLevelNoImage: TImage
+            MultiResBitmap = <
+              item
+              end>
+            Position.X = 184.000000000000000000
+            Position.Y = 295.000000000000000000
+            Size.Width = 121.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            WrapMode = Stretch
+            OnClick = SavedLevelNoImageClick
+          end
+        end
+      end
+    end
+    object PauseTabItem: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'PauseTabItem'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object PauseBackgroundImage: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = Client
+        Size.Width = 384.000000000000000000
+        Size.Height = 534.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+        object PauseMenuImage: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Position.X = 15.000000000000000000
+          Position.Y = 96.000000000000000000
+          Size.Width = 345.000000000000000000
+          Size.Height = 385.000000000000000000
+          Size.PlatformDefault = False
+          object PauseMainMenuImage: TImage
+            MultiResBitmap = <
+              item
+              end>
+            Position.X = 40.000000000000000000
+            Position.Y = 296.000000000000000000
+            Size.Width = 121.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            WrapMode = Stretch
+            OnClick = PauseMainMenuImageClick
+          end
+          object PauseContinueImage: TImage
+            MultiResBitmap = <
+              item
+              end>
+            Position.X = 184.000000000000000000
+            Position.Y = 295.000000000000000000
+            Size.Width = 121.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            WrapMode = Stretch
+            OnClick = PauseContinueImageClick
+          end
+        end
+      end
+    end
+  end
+  object PlayerTimer: TTimer
+    Enabled = False
+    Interval = 130
+    OnTimer = PlayerTimerTimer
+    Left = 212
+    Top = 160
+  end
+  object AnimeTimer: TTimer
+    Enabled = False
+    Interval = 60
+    OnTimer = AnimeTimerTimer
+    Left = 56
+    Top = 328
+  end
+  object MusicTimer: TTimer
+    OnTimer = MusicTimerTimer
+    Left = 225
+    Top = 342
+  end
+  object WinLoseTimer: TTimer
+    Enabled = False
+    Interval = 3000
+    OnTimer = WinLoseTimerTimer
+    Left = 329
+    Top = 14
+  end
+  object ZeroTimer: TTimer
+    Enabled = False
+    Interval = 200
+    OnTimer = ZeroTimerTimer
+    Left = 64
+    Top = 280
+  end
+  object AnimationEndTimer: TTimer
+    Enabled = False
+    OnTimer = AnimationEndTimerTimer
+    Left = 48
+    Top = 184
+  end
+  object EzerionAdMob: TJVEAdMob
+    Banners = <>
+    Position.Y = 534.000000000000000000
+    Size.Width = 384.000000000000000000
+    Size.Height = 90.000000000000000000
+    Size.PlatformDefault = False
+    AdDelay = 100
+    iPadUnitId = 'ca-app-pub-7389188985038134/5554244626'
+    iPhoneUnitId = 'ca-app-pub-7389188985038134/5554244626'
+    AndroidUnitId = 'ca-app-pub-7389188985038134/4083675507'
+  end
+  object MusicMediaPlayer: TMediaPlayer
+    Left = 319
+    Top = 183
+  end
+  object GestureManager1: TGestureManager
+    Sensitivity = 80.000000000000000000
+    Left = 128
+    Top = 424
+  end
+  object SQLiteUniProvider: TSQLiteUniProvider
+    Left = 284
+    Top = 440
+  end
+  object GestureManager2: TGestureManager
+    Sensitivity = 80.000000000000000000
+    Left = 10
+    Top = 422
+    GestureData = <
+      item
+        Control = LevelBackgroundImage
+        Collection = <
+          item
+            Action = YukariKaydir
+            GestureID = sgiUp
+          end
+          item
+            Action = AsagiKaydir
+            GestureID = sgiDown
+          end>
+      end>
+  end
+  object ActionList1: TActionList
+    Left = 34
+    Top = 22
+    object YukariKaydir: TAction
+      Text = 'YukariKaydir'
+      OnExecute = YukariKaydirExecute
+    end
+    object AsagiKaydir: TAction
+      Text = 'AsagiKaydir'
+      OnExecute = AsagiKaydirExecute
+    end
+  end
+  object EzerionRewardAd: TJVEAdMobInterstitial
+    Reward = True
+    iPadUnitId = 'ca-app-pub-7389188985038134/6958648026'
+    iPhoneUnitId = 'ca-app-pub-7389188985038134/6958648026'
+    AndroidUnitId = 'ca-app-pub-7389188985038134/2584209191'
+    OnAdClosed = EzerionRewardAdAdClosed
+    OnNoAd = EzerionRewardAdNoAd
+    OnReward = EzerionRewardAdReward
+    Left = 45
+    Top = 224
+  end
+  object EzerionAd: TJVEAdMobInterstitial
+    iPadUnitId = 'ca-app-pub-7389188985038134/7150219711'
+    iPhoneUnitId = 'ca-app-pub-7389188985038134/7150219711'
+    AndroidUnitId = 'ca-app-pub-7389188985038134/9104050356'
+    Left = 215
+    Top = 226
+  end
+  object EzerionAnalytics: TJVEAnalytics
+    PropertyId = 'UA-34455041-12'
+    Collect = [acFormSwitches, acExceptions, acJVEAppRater]
+    Left = 159
+    Top = 98
+  end
+  object EzerionAppRater: TJVEAppRater
+    iOSIdentifier = '1547415047'
+    iOSURL = 'https://apps.apple.com/tr/app/ezerion/id1547415047'
+    AndroidIdentifier = 'com.qulvar.Ezerion'
+    AndroidURL = 'https://play.google.com/store/apps/details?id=com.qulvar.Ezerion'
+    Left = 114
+    Top = 183
+  end
+end
